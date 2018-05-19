@@ -6,11 +6,11 @@ repositories {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    //buildToolsVersion rootProject.ext.buildToolsVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 22
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
@@ -23,11 +23,11 @@ android {
 
 dependencies {
     // Cards Library
-    implementation project(':library-core')
+    compile project(':library-core')
 
     //DynamicList
-    implementation ('com.nhaarman.listviewanimations:lib-core:3.1.0')
-    implementation ('com.nhaarman.listviewanimations:lib-manipulation:3.1.0')
+    compile ('com.nhaarman.listviewanimations:lib-core:3.1.0')
+    compile ('com.nhaarman.listviewanimations:lib-manipulation:3.1.0')
 }
 
 // Used to update in Maven

@@ -6,11 +6,11 @@ repositories {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    //buildToolsVersion rootProject.ext.buildToolsVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 22
         versionName project.VERSION_NAME
         versionCode Integer.parseInt(project.VERSION_CODE)
     }
@@ -23,10 +23,10 @@ android {
 
 dependencies {
     // Cards Library
-    implementation project(':library-core')
+    compile project(':library-core')
 
     //StaggeredGrid
-    implementation 'com.etsy.android.grid:library:1.0.5'
+    compile 'com.etsy.android.grid:library:1.0.5'
 }
 
 // Used to update in Maven
