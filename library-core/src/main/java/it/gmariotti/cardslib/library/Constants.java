@@ -25,7 +25,6 @@ import android.os.Build;
  */
 public class Constants {
 
-
     public static int API_L = Build.VERSION_CODES.LOLLIPOP;
 
     public static class IntentManager{
